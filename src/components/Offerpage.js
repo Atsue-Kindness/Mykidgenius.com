@@ -1,18 +1,18 @@
 import React from "react";
-import About from "./About";
 import Footer from "./Footer";
 import Navigation from "./Navigation";
+import Offers from "./Offers";
 
-const AboutPage = () => {
+const Offerpage = () => {
   return (
     <div>
       <div className="u__margin__bottom__medium">
         <Navigation />
       </div>
-      <About />
+      <Offers />
       <Footer />
     </div>
   );
 };
 
-export default AboutPage;
+export default Offerpage;

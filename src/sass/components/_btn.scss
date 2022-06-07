@@ -5,12 +5,15 @@
   color: $color-white;
   background-color: $color-red-main;
   padding: 1rem 3rem;
-  display: inline-block;
   box-shadow: 0 1.4rem 2rem rgba($color-red-main, 0.3);
   border: none;
 
-  @include respond(phone) {
-    display: none;
+  @include respond(tab-port) {
+    background-color: transparent;
+    border: 2px solid $color-white;
+    font-size: 2.4rem;
+    padding: 1rem 10rem;
+    opacity: 0;
   }
 }
 

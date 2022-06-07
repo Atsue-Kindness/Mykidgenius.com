@@ -22,4 +22,7 @@ html {
 
 body {
   font-family: poppins, sans-serif;
+  @include respond(tab-port) {
+    overflow-x: hidden;
+  }
 }

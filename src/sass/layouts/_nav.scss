@@ -1,38 +1,51 @@
+.nav-box {
+  background-color: $color-white;
+  box-shadow: 0 0.5rem 3rem rgba($color-dark, 0.089);
+}
+
 .navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: $color-white;
-  box-shadow: 0 0.5rem 3rem rgba($color-dark, 0.089);
-  padding: 2rem 10rem;
+  min-height: 12vh;
+  width: 90%;
+  margin: 0 auto;
 
-  &__hambugger {
-    display: none;
+  //   @include respond(phone) {
+  //     display: block;
+  //     display: flex;
+  //     flex-direction: column;
+  //     gap: 0.5rem;
 
-    @include respond(phone) {
-      display: block;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-
-      &__boxes {
-        background-color: $color-dark-grey;
-        width: 3rem;
-        height: 0.3rem;
-      }
-    }
-  }
+  //     &__boxes {
+  //       background-color: $color-dark-grey;
+  //       width: 3rem;
+  //       height: 0.3rem;
+  //     }
+  //   }
+  // }
 
   &__link {
     display: flex;
-    gap: 10rem;
+    justify-content: space-between;
+    min-width: 50%;
+    // margin: 0 auto;
 
-    @include respond(tab-port) {
-      gap: 5rem;
+    @include respond(tab-land) {
+      min-width: 70%;
     }
 
-    @include respond(phone) {
-      display: none;
+    @include respond(tab-port) {
+      position: absolute;
+      right: 0;
+      top: 12vh;
+      height: 92vh;
+      background-color: $color-red-main;
+      width: 100%;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      transition: all 0.2s;
     }
 
     li {
@@ -44,10 +57,47 @@
         color: $color-dark-grey;
         font-weight: 600;
         transition: all 0.2s;
+
+        @include respond(tab-port) {
+          color: $color-white;
+          font-size: 3.2rem;
+        }
       }
       a:hover {
         border-bottom: 3px solid $color-red-main;
       }
     }
+  }
+
+  &__hambugger {
+    background-color: $color-red-very-light;
+    padding: 0.5rem 1rem;
+    border: 2px solid $color-lightish-grey;
+    border-radius: 0.5rem;
+    display: none;
+    z-index: 1000;
+    cursor: pointer;
+    &__lines {
+      width: 2.7rem;
+      height: 0.5rem;
+      background-color: $color-dark-grey;
+      margin: 0.5rem;
+    }
+
+    @include respond(tab-port) {
+      display: block;
+    }
+  }
+}
+
+@include respond(tab-port) {
+  #hide {
+    display: none;
+    transition: all 0.2s;
+  }
+
+  #show {
+    display: flex;
+    transition: all 0.2s;
   }
 }

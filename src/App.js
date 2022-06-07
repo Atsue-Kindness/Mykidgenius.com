@@ -9,6 +9,7 @@ import EnglishKeyStage from "./components/EnglishKeyStage";
 import Accordian from "./components/Accordian";
 import Offers from "./components/Offers";
 import AboutPage from "./components/AboutPage";
+import Offerpage from "./components/Offerpage";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
         <Route path="/english" element={<EnglishPage />} />
         <Route path="/englishkey" element={<EnglishKeyStage />} />
         <Route path="/accordian" element={<Accordian />} />
-        <Route path="/offer" element={<Offers />} />
+        <Route path="/offer" element={<Offerpage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route
           path="*"
