@@ -1,0 +1,45 @@
+.green-circle {
+  width: 12rem;
+  height: 12rem;
+  background-color: #00b3b916;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  right: 30%;
+}
+.green-circle-2 {
+  width: 12rem;
+  height: 12rem;
+  background-color: #00b3b916;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -30%;
+  right: 30%;
+}
+.yellow-circle {
+  width: 12rem;
+  height: 12rem;
+  background-color: #f7d40c1f;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  left: 15%;
+
+  @include respond(tab-port) {
+    bottom: -20%;
+  }
+}
+
+.red-circle {
+  width: 12rem;
+  height: 12rem;
+  background-color: #b9410016;
+  border-radius: 50%;
+  position: absolute;
+  top: 5%;
+  right: 8%;
+}
+
+.u__margin__bottom__large {
+  margin-bottom: 20rem;
+}

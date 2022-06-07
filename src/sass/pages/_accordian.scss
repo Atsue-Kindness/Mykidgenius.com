@@ -1,0 +1,66 @@
+.accordion-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+  width: 80%;
+  margin: 10rem auto;
+
+  @include respond(tab-port) {
+    flex-direction: column;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 10rem auto;
+  }
+}
+.accordian {
+  width: 50rem;
+
+  &__items {
+    &__one {
+      background-color: $color-red-very-light-2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-between;
+      padding: 2rem 2rem;
+      border-bottom: 2px solid $color-lightish-grey;
+      cursor: pointer;
+
+      div {
+        display: flex;
+        align-items: center;
+        gap: 5rem;
+      }
+
+      span {
+        font-size: 3rem;
+        font-weight: 600;
+        color: $color-dark-grey;
+      }
+
+      p {
+        font-size: 2.8rem;
+        color: $color-dark-grey;
+      }
+    }
+
+    &__hidden-box {
+      background-color: $color-white;
+      padding-left: 8rem;
+      margin-top: 3rem;
+      transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+      //   box-shadow: 0 1rem 8rem rgba($color-dark-grey, 0.2);
+      &__lists {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        // margin-left: 10rem;
+        li {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}

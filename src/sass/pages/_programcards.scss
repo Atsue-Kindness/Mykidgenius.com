@@ -1,0 +1,210 @@
+.cardred {
+  width: 40rem;
+  height: 45rem;
+  box-shadow: 0 1rem 4rem rgba(#e14e3a, 0.2);
+  padding: 0 0 6rem;
+  text-align: center;
+
+  &__head {
+    max-width: 45rem;
+    height: 15rem;
+    background-color: $color-red-very-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      //   margin-bottom: 5rem;
+    }
+  }
+  &__body-text {
+    padding: 6.5rem 0 6rem;
+    p {
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: #e14e3a;
+    padding: 1.5rem 0;
+    color: $color-white;
+    display: block;
+  }
+
+  a:hover {
+    background-color: #d2341f;
+  }
+}
+
+.cardteal {
+  width: 40rem;
+  height: 45rem;
+  box-shadow: 2rem 2rem 4rem rgba($color-teal-main, 0.2);
+  padding: 0 0 6rem;
+  text-align: center;
+
+  &__head {
+    max-width: 45rem;
+    height: 15rem;
+    background-color: $color-teal-very-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      //   margin-bottom: 5rem;
+    }
+  }
+
+  &__body-text {
+    padding: 6.5rem 0;
+    p {
+      font-size: 2rem;
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: $color-teal-main;
+    padding: 1.5rem 0;
+    color: $color-white;
+    display: block;
+  }
+
+  a:hover {
+    background-color: $color-teal-dark;
+  }
+}
+
+.cardyellow {
+  width: 40rem;
+  height: 45rem;
+  box-shadow: 0 1rem 4rem rgba($color-yellow-main, 0.2);
+  padding: 0 0 6rem;
+  text-align: center;
+
+  &__head {
+    max-width: 45rem;
+    height: 15rem;
+    background-color: $color-yellow-very-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      //   margin-bottom: 5rem;
+    }
+  }
+  &__body-text {
+    padding: 6.5rem 0;
+    p {
+      font-size: 2rem;
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: $color-yellow-main;
+    padding: 1.5rem 0;
+    color: $color-white;
+    display: block;
+  }
+
+  a:hover {
+    background-color: $color-yellow-dark;
+  }
+}
+
+.cardorange {
+  width: 40rem;
+  height: 45rem;
+  box-shadow: 0 1rem 4rem rgba($color-orange, 0.2);
+  padding: 0 0 6rem;
+  text-align: center;
+
+  &__head {
+    max-width: 45rem;
+    height: 15rem;
+    background-color: $color-orange-very-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      //   margin-bottom: 5rem;
+    }
+  }
+  &__body-text {
+    padding: 6.5rem 0 6rem;
+    p {
+      font-size: 2rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: $color-orange;
+    padding: 1.5rem 0;
+    color: $color-white;
+    display: block;
+  }
+
+  a:hover {
+    background-color: $color-orange-dark;
+  }
+}
+
+.cardlemon {
+  width: 40rem;
+  height: 45rem;
+  box-shadow: 0 1rem 4rem rgba($color-green-main, 0.2);
+  padding: 0 0 6rem;
+  text-align: center;
+
+  &__head {
+    max-width: 45rem;
+    height: 15rem;
+    background-color: $color-green-very-light;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-size: 2.8rem;
+      font-weight: 600;
+      //   margin-bottom: 5rem;
+    }
+  }
+  &__body-text {
+    padding: 6.5rem 0;
+    p {
+      font-size: 2rem;
+      margin-bottom: 2.2rem;
+    }
+  }
+
+  a {
+    font-size: 1.6rem;
+    text-decoration: none;
+    background-color: $color-green-main;
+    padding: 1.5rem 0;
+    color: $color-white;
+    display: block;
+  }
+
+  a:hover {
+    background-color: $color-green-dark;
+  }
+}

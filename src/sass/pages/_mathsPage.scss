@@ -1,0 +1,31 @@
+.maths {
+  h1 {
+    font-size: 6rem;
+    font-weight: 600;
+    color: $color-dark-grey;
+    text-align: center;
+    margin-top: 15rem;
+  }
+
+  &__line {
+    width: 90%;
+    height: 0.6rem;
+    margin: 2rem auto 4rem;
+    background: linear-gradient(
+      to right,
+      $color-red-main,
+      $color-teal-main,
+      $color-yellow-main,
+      $color-orange
+    );
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 10rem auto 10rem;
+  }
+}

@@ -1,0 +1,28 @@
+.heading-primary {
+  position: relative;
+  h2 {
+    font-size: 4.2rem;
+    text-align: center;
+    margin-bottom: 15rem;
+  }
+
+  &__yellow-one {
+    width: 12rem;
+    height: 1.3rem;
+    background-color: $color-yellow-main;
+    position: absolute;
+    top: 50%;
+    right: 43%;
+    z-index: -1;
+
+    @include respond(tab-land) {
+      right: 38%;
+    }
+    @include respond(phone) {
+      right: 30%;
+    }
+    @include respond(phoneSmall) {
+      right: 20%;
+    }
+  }
+}

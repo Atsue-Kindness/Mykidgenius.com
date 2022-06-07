@@ -1,0 +1,76 @@
+.offers {
+  text-align: center;
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 13rem;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+
+    &__one {
+      max-width: 40rem;
+      height: 35rem;
+      box-shadow: 0 1rem 4rem rgba(#e14e3a, 0.2);
+      background-color: $color-white;
+      color: $color-dark-grey;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 3rem;
+
+      h2 {
+        font-size: 4.2rem;
+        margin-bottom: 2rem;
+        color: $color-red-main;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+      a {
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 6rem;
+        color: $color-dark;
+      }
+    }
+
+    &__two {
+      max-width: 40rem;
+      height: 35rem;
+      box-shadow: 0 1rem 4rem rgba($color-teal-main, 0.2);
+      background-color: $color-white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 0 3rem;
+
+      h2 {
+        font-size: 4.2rem;
+        margin-bottom: 2rem;
+        color: $color-teal-main;
+      }
+
+      p {
+        font-size: 1.6rem;
+      }
+      a {
+        font-size: 1.6rem;
+        font-weight: 700;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 6rem;
+        color: $color-dark;
+      }
+      a:hover {
+        color: $color-teal-main;
+      }
+    }
+  }
+}

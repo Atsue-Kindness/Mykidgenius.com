@@ -1,0 +1,168 @@
+.keys {
+  margin: 10rem 2rem 5rem;
+
+  &__titles {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      gap: 5rem;
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    &__eng {
+      font-size: 6rem;
+      color: $color-dark-grey;
+
+      @include respond(tab-port) {
+        font-size: 1.6rem;
+      }
+    }
+
+    &__nurs {
+      font-size: 6rem;
+      color: #50505094;
+      @include respond(tab-port) {
+        font-size: 3.2rem;
+      }
+    }
+  }
+
+  &__topic {
+    width: 80%;
+    margin: 10rem auto;
+    display: flex;
+    justify-content: baseline;
+    justify-content: space-between;
+
+    @include respond(tab-port) {
+      margin-top: 5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    @include respond(phone) {
+      justify-content: center;
+      align-items: center;
+    }
+
+    &__one {
+      p {
+        font-size: 2.8rem;
+        color: $color-dark-grey;
+        font-weight: 600;
+        margin-bottom: 10rem;
+
+        @include respond(tab-port) {
+          margin-bottom: 3rem;
+          font-size: 2remrem;
+          color: #50505084;
+        }
+
+        @include respond(phone) {
+          font-size: 1.6rem;
+        }
+      }
+
+      h2 {
+        font-size: 4.2rem;
+        font-weight: 600;
+        margin-bottom: 5rem;
+
+        @include respond(phone) {
+          box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.242);
+          padding: 5rem 5rem;
+          text-align: center;
+          color: $color-red-main;
+          margin-bottom: 8rem;
+        }
+      }
+
+      &__form {
+        label {
+          font-size: 2rem;
+          display: block;
+          margin-bottom: 1rem;
+        }
+        input {
+          padding: 2rem 35rem 2rem 3rem;
+          display: block;
+          font-size: 2rem;
+          background-color: $color-white-light;
+          border: 2px solid $color-lightish-grey;
+          margin-bottom: 4rem;
+
+          @include respond(phone) {
+            margin-bottom: 6rem;
+          }
+        }
+
+        button {
+          display: block;
+          padding: 1.5rem 6rem;
+          color: $color-white;
+          border: none;
+          font-size: 1.4rem;
+          background-color: $color-red-main;
+          box-shadow: 0 1.4rem 2rem rgba($color-red-main, 0.3);
+
+          @include respond(phone) {
+            padding: 2rem 29.5rem;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &__two {
+      display: flex;
+      gap: 5rem;
+
+      @include respond(tab-port) {
+        margin-bottom: 8rem;
+        grid-row-start: 1;
+        grid-row-end: -1;
+        gap: 0;
+        justify-content: center;
+        justify-content: space-between;
+      }
+
+      &__box {
+        &__p1 {
+          font-size: 2rem;
+          font-weight: 600;
+          display: inline-block;
+          color: $color-red-main;
+
+          @include respond(tab-land) {
+            font-size: 1.7rem;
+          }
+        }
+
+        &__ptwo {
+          color: $color-dark-grey;
+          border: 2px solid $color-lightish-grey;
+          padding: 0.5rem 1.2rem;
+          display: inline-block;
+          margin-left: 0.5rem;
+          font-size: 1.8rem;
+          font-weight: 600;
+          @include respond(tab-land) {
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.earn-footer {
+  @include respond(phone) {
+    display: none;
+  }
+}

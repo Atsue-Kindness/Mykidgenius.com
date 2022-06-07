@@ -1,0 +1,49 @@
+.about-box {
+  position: relative;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+  flex-wrap: wrap;
+  &__left {
+    max-width: 50rem;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__right {
+    p {
+      font-size: 1.6rem;
+      max-width: 50rem;
+    }
+
+    a {
+      color: $color-teal-main;
+      text-decoration: none;
+      font-size: 1.7rem;
+      display: inline-block;
+      margin-top: 3rem;
+      font-weight: 600;
+
+      @include respond(tab-port) {
+        text-align: center;
+      }
+    }
+
+    a:hover {
+      color: $color-teal-dark;
+    }
+  }
+
+  @include respond(tab-port) {
+    width: 80%;
+    margin: 0 auto;
+    gap: 8rem;
+    text-align: center;
+  }
+}

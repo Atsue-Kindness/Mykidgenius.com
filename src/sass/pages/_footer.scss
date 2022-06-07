@@ -1,0 +1,63 @@
+.footer {
+  padding: 10rem 0;
+  background-color: $color-white-light;
+
+  &__box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @include respond(tab-port) {
+      flex-direction: column;
+      gap: 5rem;
+      align-items: start;
+      margin-left: 10%;
+    }
+
+    &__1 {
+      //   &__logo-box {
+      //     max-width: 40rem;
+
+      //     &__logo {
+      //       max-width: 100%;
+      //     }
+      //   }
+
+      p {
+        font-size: 1.6rem;
+        max-width: 35rem;
+        margin-top: 2rem;
+      }
+    }
+
+    &__2 {
+      a {
+        color: $color-dark;
+        text-decoration: none;
+        font-size: 1.6rem;
+        display: block;
+        margin-top: 2rem;
+        font-weight: 500;
+      }
+    }
+
+    &__3 {
+      a {
+        color: $color-dark;
+        text-decoration: none;
+        font-size: 1.6rem;
+        display: block;
+        margin-top: 2rem;
+        font-weight: 500;
+      }
+    }
+
+    &__4 {
+      h5,
+      p {
+        font-size: 1.6rem;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
