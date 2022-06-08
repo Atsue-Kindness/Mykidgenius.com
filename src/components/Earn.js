@@ -10,7 +10,7 @@ const Earn = () => {
 
       <p>To find out about our unique earnings opportunity via MykidGenius</p>
 
-      <a className="btn-red" href="">
+      <a className="btn-red2" href="">
         Learn how to earn
       </a>
     </div>

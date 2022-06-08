@@ -12,7 +12,7 @@ const Hero = () => {
             Boost your <br /> Child's Confidence in <br />{" "}
             <span>Maths and English</span>
           </h1>
-          <a className="btn-red" href="">
+          <a className="btn-red2" href="">
             Learn More
           </a>
         </div>

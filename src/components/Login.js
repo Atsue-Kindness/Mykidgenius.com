@@ -2,6 +2,7 @@ import React from "react";
 import "../main.css";
 import logo from "../imgs/mykidgenius-logo.svg";
 import pixlogin from "../imgs/Login (1) (1).png";
+import Footer from "./Footer";
 
 const Login = () => {
   return (
@@ -52,6 +53,8 @@ const Login = () => {
           </div>
         </div>
       </div>
+
+      <Footer />
     </div>
   );
 };

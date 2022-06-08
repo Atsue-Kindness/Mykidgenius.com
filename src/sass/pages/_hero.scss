@@ -3,8 +3,12 @@
   align-items: center;
   margin-bottom: 4rem;
 
+  @include respond(tab-port) {
+    margin-top: 8rem;
+  }
   @include respond(phone) {
     flex-direction: column;
+    margin-top: 0;
   }
 
   &__left {
@@ -14,9 +18,13 @@
     @include respond(tab-land) {
       padding-top: 15rem;
     }
+    @include respond(tab-port) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
     @include respond(phone) {
-      padding-top: 10rem;
-      padding-left: 0;
+      padding: 7rem 0 7rem;
     }
 
     h1 {

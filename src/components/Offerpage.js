@@ -6,7 +6,7 @@ import Offers from "./Offers";
 const Offerpage = () => {
   return (
     <div>
-      <div className="u__margin__bottom__medium">
+      <div className="u__margin__bottom__medium move-up">
         <Navigation />
       </div>
       <Offers />
