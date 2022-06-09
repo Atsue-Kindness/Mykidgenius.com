@@ -1,11 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../main.css";
+import { Link } from "react-router-dom";
 
-const cardlemon = (props) => {
+const Cardredtwo = (props) => {
   return (
-    <div className="cardlemon">
-      <div className="cardlemon__head">
+    <div className="cardred">
+      <div className="cardred__head">
         <h3>{props.title}</h3>
       </div>
       <div className="cardred__body-text">
@@ -14,9 +14,9 @@ const cardlemon = (props) => {
         <p>{props.body2}</p>
       </div>
 
-      <Link to={""}>Take class</Link>
+      <Link to={"/offer"}>Take class</Link>
     </div>
   );
 };
 
-export default cardlemon;
+export default Cardredtwo;

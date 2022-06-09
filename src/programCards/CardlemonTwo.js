@@ -2,20 +2,21 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../main.css";
 
-const Cardyellow = (props) => {
+const CardlemonTwo = (props) => {
   return (
-    <div className="cardyellow">
-      <div className="cardyellow__head">
+    <div className="cardlemon">
+      <div className="cardlemon__head">
         <h3>{props.title}</h3>
       </div>
-      <div className="cardyellow__body-text">
+      <div className="cardred__body-text">
         <p>{props.body}</p>
         <p>{props.body1}</p>
         <p>{props.body2}</p>
       </div>
+
       <Link to={""}>Take class</Link>
     </div>
   );
 };
 
-export default Cardyellow;
+export default CardlemonTwo;

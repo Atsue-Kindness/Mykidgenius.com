@@ -1,13 +1,13 @@
 import React from "react";
-import AccordianData from "./AccordianData";
+import Accordiononedata from "./AccordionOneData";
 import { useState } from "react";
 import "../main.css";
 import { FaChevronUp, FaChevronDown } from "react-icons/fa";
 import { BsFillPlayCircleFill } from "react-icons/bs";
-import Navigation from "./Navigation";
+import Navigation from "../components/Navigation";
 import { Link } from "react-router-dom";
 
-const Accordian = () => {
+const AccordionOne = () => {
   const [clicked, setClick] = useState(false);
 
   const toggle = (i) => {
@@ -22,7 +22,7 @@ const Accordian = () => {
       <Navigation />
       <div className="keys maths">
         <div className="keys__titles">
-          <h2 className="keys__titles__eng">English</h2>
+          <h2 className="keys__titles__eng">Maths</h2>
           <h2 className="keys__titles__nurs">Nursery/Reception</h2>
         </div>
 
@@ -30,7 +30,7 @@ const Accordian = () => {
       </div>
       <div className="accordion-box">
         <div className="accordian">
-          {AccordianData.map((item, i) => (
+          {Accordiononedata.map((item, i) => (
             <div className="accordian__items">
               <div
                 className="accordian__items__one"
@@ -53,7 +53,7 @@ const Accordian = () => {
                   <ol className="accordian__items__hidden-box__lists">
                     {item.list1 ? (
                       <li>
-                        <Link to={""}>{item.list1}</Link>
+                        <Link to={"/takeclass"}>{item.list1}</Link>
                       </li>
                     ) : null}
                     {item.list2 ? (
@@ -112,4 +112,4 @@ const Accordian = () => {
   );
 };
 
-export default Accordian;
+export default AccordionOne;

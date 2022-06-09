@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../main.css";
 
-const Cardyellow = (props) => {
+const CardtealTwo = (props) => {
   return (
-    <div className="cardyellow">
-      <div className="cardyellow__head">
+    <div className="cardteal">
+      <div className="cardteal__head">
         <h3>{props.title}</h3>
       </div>
-      <div className="cardyellow__body-text">
+
+      <div className="cardteal__body-text">
         <p>{props.body}</p>
         <p>{props.body1}</p>
         <p>{props.body2}</p>
@@ -18,4 +19,4 @@ const Cardyellow = (props) => {
   );
 };
 
-export default Cardyellow;
+export default CardtealTwo;

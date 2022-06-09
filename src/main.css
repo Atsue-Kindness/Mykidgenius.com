@@ -152,7 +152,7 @@ body {
   @media (max-width: 56.25em) {
     .btn-red2 {
       font-size: 2.4rem;
-      padding: 1.5rem 15rem; } }
+      padding: 1.5rem 10rem; } }
 
 .btn-red:hover {
   background-color: #c43e2c;
@@ -781,6 +781,12 @@ body {
           text-align: center;
           color: #e14e3a;
           margin-bottom: 8rem; } }
+    .keys__topic__one__items {
+      margin: 5rem 0;
+      max-width: 50rem;
+      border: 2px solid;
+      border-radius: 2rem;
+      padding: 3rem 0 3rem 3rem; }
     .keys__topic__one__form label {
       font-size: 2rem;
       display: block;
@@ -858,7 +864,13 @@ body {
       margin: 10rem auto; } }
 
 .accordian {
-  width: 50rem; }
+  width: 70rem; }
+  @media (max-width: 56.25em) {
+    .accordian {
+      width: 50rem; } }
+  @media (max-width: 37.5em) {
+    .accordian {
+      width: 35rem; } }
   .accordian__items__one {
     background-color: #fff8f8;
     display: flex;
@@ -871,7 +883,7 @@ body {
     .accordian__items__one div {
       display: flex;
       align-items: center;
-      gap: 5rem; }
+      gap: 3rem; }
     .accordian__items__one span {
       font-size: 3rem;
       font-weight: 600;
@@ -879,14 +891,32 @@ body {
     .accordian__items__one p {
       font-size: 2.8rem;
       color: #505050; }
+      @media (max-width: 56.25em) {
+        .accordian__items__one p {
+          font-size: 2.2rem; } }
+      @media (max-width: 37.5em) {
+        .accordian__items__one p {
+          font-size: 1.7rem; } }
   .accordian__items__hidden-box {
     background-color: #ffffff;
-    padding-left: 8rem;
-    margin-top: 3rem;
+    padding-left: 5rem;
+    margin: 3rem 0;
     transition: all 0.5s cubic-bezier(0, 1, 0, 1); }
     .accordian__items__hidden-box__lists {
       display: flex;
       flex-direction: column;
-      gap: 3rem; }
+      gap: 2rem; }
       .accordian__items__hidden-box__lists li {
-        font-size: 2rem; }
+        font-size: 1.8rem; }
+        .accordian__items__hidden-box__lists li a {
+          font-size: 1.8rem;
+          text-decoration: none;
+          color: #505050; }
+          @media (max-width: 37.5em) {
+            .accordian__items__hidden-box__lists li a {
+              font-size: 1.6rem; } }
+        .accordian__items__hidden-box__lists li a:hover {
+          color: #000000; }
+
+.play-btn {
+  color: #505050; }

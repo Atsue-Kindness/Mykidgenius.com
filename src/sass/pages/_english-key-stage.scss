@@ -83,6 +83,14 @@
         }
       }
 
+      &__items {
+        margin: 5rem 0;
+        max-width: 50rem;
+        border: 2px solid;
+        border-radius: 2rem;
+        padding: 3rem 0 3rem 3rem;
+      }
+
       &__form {
         label {
           font-size: 2rem;

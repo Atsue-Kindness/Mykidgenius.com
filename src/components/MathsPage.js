@@ -8,7 +8,13 @@ import CardOrange from "../programCards/CardOrange";
 import Cardlemon from "../programCards/Cardlemon";
 import Earn from "./Earn";
 import Footer from "./Footer";
-import logowhite from "../imgs/mykidgenius background logo white.svg";
+import Cardredtwo from "../programCards/Cardredtwo";
+import CardredThree from "../programCards/CardredThree";
+import CardredFour from "../programCards/CardredFour";
+import CardtealTwo from "../programCards/CardtealTwo";
+import CardyellowTwo from "../programCards/CardyellowTwo";
+import CardorangeTwo from "../programCards/CardorangeTwo";
+import CardlemonTwo from "../programCards/CardlemonTwo";
 
 const MathsPage = () => {
   return (
@@ -55,49 +61,49 @@ const MathsPage = () => {
             body2="Multiplication of numbers"
           />
 
-          <Cardred
+          <Cardredtwo
             title="Year 5"
             body="Average speed/temperature"
             body1="Fraction and Decimal"
             body2="Percentage"
           />
 
-          <Cardred
+          <CardredThree
             title="Year 6"
             body="Square and square roots"
             body1="Addition of fraction"
             body2="Ration, Proportion and Percentage"
           />
 
-          <Cardteal
+          <CardtealTwo
             title="Year 7"
             body="Whole Number"
             body1="Indices and standard form"
             body2="Data Presentation"
           />
 
-          <Cardyellow
+          <CardyellowTwo
             title="Year 8"
             body="Solving Equation"
             body1="Pythagoras Rule"
             body2="Cylinder and line"
           />
 
-          <CardOrange
+          <CardorangeTwo
             title="Year 9"
             body="Factorization"
             body1="Plane shape"
             body2="Trigonometry"
           />
 
-          <Cardlemon
+          <CardlemonTwo
             title="Year 10"
             body="Algebra"
             body1="Set"
             body2="Mesuration"
           />
 
-          <Cardred
+          <CardredFour
             title="Year 11"
             body="Geometry"
             body1="Statistics"

@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "../main.css";
 
-const Cardyellow = (props) => {
+const CardyellowTwo = (props) => {
   return (
     <div className="cardyellow">
       <div className="cardyellow__head">
@@ -18,4 +18,4 @@ const Cardyellow = (props) => {
   );
 };
 
-export default Cardyellow;
+export default CardyellowTwo;

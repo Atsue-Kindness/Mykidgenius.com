@@ -1,16 +1,17 @@
 import React from "react";
 import "../main.css";
-import Earn from "./Earn";
-import Footer from "./Footer";
-import Navigation from "./Navigation";
+import Earn from "../components/Earn";
+import Footer from "../components/Footer";
+import Navigation from "../components/Navigation";
+import { ImBook } from "react-icons/im";
 
-const EnglishKeyStage = () => {
+const MathsClassOne = () => {
   return (
     <div>
       <Navigation />
       <div className="keys maths">
         <div className="keys__titles">
-          <h2 className="keys__titles__eng">English</h2>
+          <h2 className="keys__titles__eng">Maths</h2>
           <h2 className="keys__titles__nurs">Nursery/Reception</h2>
         </div>
 
@@ -18,8 +19,13 @@ const EnglishKeyStage = () => {
 
         <div className="keys__topic">
           <div className="keys__topic__one">
-            <p>Alphabets</p>
-            <h2>What Alphabet comes after V</h2>
+            <p>Counting up to five</p>
+            <h2>How many books are there?</h2>
+            <div className="keys__topic__one__items">
+              <ImBook size={60} />
+              <ImBook size={60} />
+              <ImBook size={60} />
+            </div>
             <form className="keys__topic__one__form" action="">
               <label htmlFor="answer">Answer</label>
               <input
@@ -53,4 +59,4 @@ const EnglishKeyStage = () => {
   );
 };
 
-export default EnglishKeyStage;
+export default MathsClassOne;

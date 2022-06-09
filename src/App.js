@@ -7,9 +7,10 @@ import MathsPage from "./components/MathsPage";
 import EnglishPage from "./components/EnglishPage";
 import EnglishKeyStage from "./components/EnglishKeyStage";
 import Accordian from "./components/Accordian";
-import Offers from "./components/Offers";
 import AboutPage from "./components/AboutPage";
 import Offerpage from "./components/Offerpage";
+import AccordionOne from "./accordionsMaths/AccordionOne";
+import MathsClassOne from "./take class Maths/MathsClassOne";
 
 function App() {
   return (
@@ -25,6 +26,8 @@ function App() {
         <Route path="/accordian" element={<Accordian />} />
         <Route path="/offer" element={<Offerpage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/accordmathone" element={<AccordionOne />} />
+        <Route path="/takeclass" element={<MathsClassOne />} />
         <Route
           path="*"
           element={

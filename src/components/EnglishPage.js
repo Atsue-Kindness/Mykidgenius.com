@@ -1,13 +1,16 @@
 import React from "react";
 import "../main.css";
 import Navigation from "./Navigation";
-import Cardred from "../programCards/Cardred";
-import Cardteal from "../programCards/Cardteal";
-import Cardyellow from "../programCards/Cardyellow";
-import CardOrange from "../programCards/CardOrange";
-import Cardlemon from "../programCards/Cardlemon";
 import Earn from "./Earn";
 import Footer from "./Footer";
+import CardredEone from "../englisg program card/CardredEone";
+import CardredEtwo from "../englisg program card/CardredEtwo";
+import CardredEthree from "../englisg program card/CardredEthree";
+import CardyellowEone from "../englisg program card/CardyellowEone";
+import CardorangeEone from "../englisg program card/CardorangeEone";
+import CardtealEtwo from "../englisg program card/CardtealEtwo";
+import CardtealEone from "../englisg program card/CardtealEone";
+import CardlemonEone from "../englisg program card/CardlemonEone";
 
 const EnglishPage = () => {
   return (
@@ -19,63 +22,63 @@ const EnglishPage = () => {
         <div className="maths__line"></div>
 
         <div className="maths__container">
-          <Cardred
+          <CardredEone
             title="Nursery/Reception"
             body="Frequency Words"
             body1="Alphabet"
             body2="Associating Letter With objects"
           />
 
-          <Cardteal
+          <CardtealEone
             title="Key stage 1 Year 1"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
           />
 
-          <Cardyellow
+          <CardyellowEone
             title="Key stage 1 Year 2"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
           />
 
-          <CardOrange
+          <CardorangeEone
             title="Key stage 2 Year 3"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
           />
 
-          <Cardlemon
+          <CardlemonEone
             title="Key stage 2 Year 4"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
           />
 
-          <Cardred
+          <CardredEtwo
             title="Key stage 2 Year 5"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Name of things (Noun)"
           />
 
-          <Cardred
+          <CardredEthree
             title="Key stage 2 Year 4"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
           />
 
-          <Cardteal
+          <CardtealEtwo
             title="Key stage 2 Year 5"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
           />
 
-          <Cardyellow
+          <CardyellowEone
             title="Key stage 2 Year 6"
             body="Name of things (Noun)"
             body1="Singular and plural"
