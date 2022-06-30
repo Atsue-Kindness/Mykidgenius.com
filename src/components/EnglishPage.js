@@ -1,16 +1,14 @@
 import React from "react";
 import "../main.css";
+import { Link } from "react-router-dom";
 import Navigation from "./Navigation";
 import Earn from "./Earn";
 import Footer from "./Footer";
-import CardredEone from "../englisg program card/CardredEone";
-import CardredEtwo from "../englisg program card/CardredEtwo";
-import CardredEthree from "../englisg program card/CardredEthree";
-import CardyellowEone from "../englisg program card/CardyellowEone";
-import CardorangeEone from "../englisg program card/CardorangeEone";
-import CardtealEtwo from "../englisg program card/CardtealEtwo";
-import CardtealEone from "../englisg program card/CardtealEone";
-import CardlemonEone from "../englisg program card/CardlemonEone";
+import Cardteal from "../programCards/Cardteal";
+import Cardyellow from "../programCards/Cardyellow";
+import Cardorange from "../programCards/CardOrange";
+import Cardlemon from "../programCards/Cardlemon";
+import Cardred from "../programCards/Cardred";
 
 const EnglishPage = () => {
   return (
@@ -22,68 +20,86 @@ const EnglishPage = () => {
         <div className="maths__line"></div>
 
         <div className="maths__container">
-          <CardredEone
+          <Cardred
             title="Nursery/Reception"
             body="Frequency Words"
             body1="Alphabet"
             body2="Associating Letter With objects"
-          />
+          >
+            <Link to={"/about"}>Take class</Link>
+          </Cardred>
 
-          <CardtealEone
+          <Cardteal
             title="Key stage 1 Year 1"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
-          />
+          >
+            <Link to={"/home"}>Take class</Link>
+          </Cardteal>
 
-          <CardyellowEone
+          <Cardyellow
             title="Key stage 1 Year 2"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
-          />
+          >
+            <Link to={"/home"}>Take class</Link>
+          </Cardyellow>
 
-          <CardorangeEone
+          <Cardorange
             title="Key stage 2 Year 3"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
-          />
+          >
+            <Link to={"/home"}>Take class</Link>
+          </Cardorange>
 
-          <CardlemonEone
+          <Cardlemon
             title="Key stage 2 Year 4"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
-          />
+          >
+            <Link to={"/home"}>Take class</Link>
+          </Cardlemon>
 
-          <CardredEtwo
+          <Cardred
             title="Key stage 2 Year 5"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Name of things (Noun)"
-          />
+          >
+            <Link to={"/home"}>Take class</Link>
+          </Cardred>
 
-          <CardredEthree
+          <Cardred
             title="Key stage 2 Year 4"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
-          />
+          >
+            <Link to={"/home"}>Take class</Link>
+          </Cardred>
 
-          <CardtealEtwo
+          <Cardteal
             title="Key stage 2 Year 5"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
-          />
+          >
+            <Link to={"/home"}>Take class</Link>
+          </Cardteal>
 
-          <CardyellowEone
+          <Cardyellow
             title="Key stage 2 Year 6"
             body="Name of things (Noun)"
             body1="Singular and plural"
             body2="Identifying Proper Nouns"
-          />
+          >
+            <Link to={"/home"}>Take class</Link>
+          </Cardyellow>
         </div>
 
         <Earn />

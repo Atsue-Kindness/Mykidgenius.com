@@ -8,6 +8,7 @@ const Accordiononedata = [
     list5: "Counting of objects with different colors up to",
     list6: "Counting of objects with different colors up to",
     list7: "Counting of objects with different colors up to",
+    id: 1,
   },
   {
     cont1: "Counting and Numbers up to 9",

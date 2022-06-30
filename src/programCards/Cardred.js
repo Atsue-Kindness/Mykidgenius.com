@@ -1,6 +1,5 @@
 import React from "react";
 import "../main.css";
-import { Link } from "react-router-dom";
 
 const cardRed = (props) => {
   return (
@@ -14,7 +13,7 @@ const cardRed = (props) => {
         <p>{props.body2}</p>
       </div>
 
-      <Link to={"/accordmathone"}>Take class</Link>
+      {props.children}
     </div>
   );
 };

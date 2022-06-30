@@ -384,7 +384,6 @@ body {
 .carousel {
   display: flex;
   justify-content: center;
-  width: 70%;
   margin: 0 auto;
   gap: 10rem;
   align-items: center; }
@@ -418,6 +417,12 @@ body {
     font-weight: 600; }
   .carousel__right__country {
     font-size: 1.8rem; }
+
+.carousel-indicators [data-bs-target] {
+  background-color: #505050;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; }
 
 .earn {
   padding: 15rem 0;

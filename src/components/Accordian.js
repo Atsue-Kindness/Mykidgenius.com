@@ -31,12 +31,8 @@ const Accordian = () => {
       <div className="accordion-box">
         <div className="accordian">
           {AccordianData.map((item, i) => (
-            <div className="accordian__items">
-              <div
-                className="accordian__items__one"
-                onClick={() => toggle(i)}
-                key={i}
-              >
+            <div className="accordian__items" key={i}>
+              <div className="accordian__items__one" onClick={() => toggle(i)}>
                 <div>
                   <span>
                     {clicked === i ? <FaChevronDown /> : <FaChevronUp />}
@@ -103,7 +99,9 @@ const Accordian = () => {
                     ) : null}
                   </ol>
                 </div>
-              ) : null}
+              ) : (
+                clicked === !!i
+              )}
             </div>
           ))}
         </div>

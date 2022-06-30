@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../main.css";
 
 const Cardorange = (props) => {
@@ -14,7 +13,7 @@ const Cardorange = (props) => {
         <p>{props.body2}</p>
       </div>
 
-      <Link to={""}>Take class</Link>
+      {props.children}
     </div>
   );
 };

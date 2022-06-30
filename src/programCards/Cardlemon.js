@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "../main.css";
 
-const cardlemon = (props) => {
+const Cardlemon = (props) => {
   return (
     <div className="cardlemon">
       <div className="cardlemon__head">
@@ -14,9 +13,9 @@ const cardlemon = (props) => {
         <p>{props.body2}</p>
       </div>
 
-      <Link to={""}>Take class</Link>
+      {props.children}
     </div>
   );
 };
 
-export default cardlemon;
+export default Cardlemon;

@@ -31,12 +31,8 @@ const AccordionOne = () => {
       <div className="accordion-box">
         <div className="accordian">
           {Accordiononedata.map((item, i) => (
-            <div className="accordian__items">
-              <div
-                className="accordian__items__one"
-                onClick={() => toggle(i)}
-                key={i}
-              >
+            <div className="accordian__items" key={i}>
+              <div className="accordian__items__one" onClick={() => toggle(i)}>
                 <div>
                   <span>
                     {clicked === i ? <FaChevronDown /> : <FaChevronUp />}
